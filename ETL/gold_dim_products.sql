@@ -1,6 +1,6 @@
-create table gold."dim_products" as 
+create view gold."dim_products" as 
 select 
-	product_id,
+	distinct product_id,
 	product_category,
 	unit_price
 from silver."Sales"
