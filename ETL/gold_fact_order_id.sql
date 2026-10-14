@@ -1,13 +1,4 @@
-select *
-from silver."Sales"
-
-select *
-from gold.dim_customers
-
-select count(distinct employee_id)
-from silver."Employees"
-
-create table gold."fact_order_id" as 
+create view gold."fact_order_id" as 
 select 
 	order_id, 
 	order_date,

@@ -1,3 +1,3 @@
-create table gold."dim_customers" as 
+create view gold."dim_customers" as 
 select * 
 from silver."Customers"
